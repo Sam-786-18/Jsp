@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE taglib
+  PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.2//EN"
+         "http://java.sun.com/dtd/web-jsptaglibrary_2_1.dtd">
+
+<taglib>
+	<tlib-version>1.0</tlib-version>
+	<jsp-version>2.1</jsp-version>
+	<short-name>start</short-name>
+	<description>
+		An example Tag Library
+	</description>
+	<tag>
+		<name>example</name>
+		<tag-class>com.nt.tags.ExampleTag</tag-class>
+		<body-content>EMPTY</body-content>
+		<description>Simplest example: inserts one line of output</description>
+	</tag>
+
+	<tag>
+		<name>prime</name>
+		<tag-class>com.nt.tags.PrimeTag</tag-class>
+		<body-content>EMPTY</body-content>
+		<description>Prime numbers generation</description>
+		<attribute>
+			<name>n</name>
+			<required>false</required>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>display</name>
+		<tag-class>com.nt.tags.DisplayTag</tag-class>
+		<body-content>Jsp</body-content>
+		<description>Displaying text in different fonts</description>
+		<attribute>
+			<name>font</name>
+			<required>true</required> <!-- mandatory attribute -->
+		</attribute>
+
+		<attribute>
+			<name>size</name>
+			<required>false</required>  <!-- optional attribute -->
+		</attribute>
+	</tag>
+</taglib>

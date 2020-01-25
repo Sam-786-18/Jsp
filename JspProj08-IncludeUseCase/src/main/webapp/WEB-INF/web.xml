@@ -1,0 +1,16 @@
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <welcome-file-list>
+  <welcome-file>page1.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+  <servlet-name>header</servlet-name>
+  <servlet-class>com.mhb.servlet.HeaderServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>header</servlet-name>
+  <url-pattern>/headerurl</url-pattern>
+  </servlet-mapping>
+  
+</web-app>

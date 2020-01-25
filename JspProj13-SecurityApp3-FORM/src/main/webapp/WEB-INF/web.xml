@@ -1,0 +1,37 @@
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+  <display-name>Archetype Created Web Application</display-name>
+<welcome-file-list>
+<welcome-file>index.jsp</welcome-file>
+</welcome-file-list>
+<servlet>
+<servlet-name>card</servlet-name>
+<jsp-file>/WEB-INF/pages/cardPayment.jsp</jsp-file>
+</servlet>
+<servlet-mapping>
+<servlet-name>card</servlet-name>
+<url-pattern>/cardurl</url-pattern>
+</servlet-mapping>
+<security-constraint>
+<web-resource-collection>
+<web-resource-name>r1</web-resource-name>
+<url-pattern>/cardurl</url-pattern>
+<http-method>GET</http-method>
+</web-resource-collection>
+<auth-constraint>
+<role-name>manager</role-name>
+</auth-constraint>
+</security-constraint>
+<login-config>
+<auth-method>FORM</auth-method>
+<realm-name>myrealm</realm-name>
+<form-login-config>
+<form-login-page>/login_form.html</form-login-page>
+<form-error-page>/login_error.html</form-error-page>
+</form-login-config>
+</login-config>
+
+</web-app>

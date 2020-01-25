@@ -1,0 +1,2 @@
+<h1 style="color:blue">Israel Waited For 70 years for indian PM</h1>
+<p><%=new java.util.Date() %>Hots news. Indian primes minister, Modi landed on isreal soil after 70 years but But prime minister hugged each as if they are meeting every day. People of india replied to israel statements that we also waited 67 years Modi</p>

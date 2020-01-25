@@ -1,0 +1,43 @@
+<script language="JavaScript">
+function isHtml(){
+alert("hello");
+//set "HTML value to hiddene box
+form.source.value="HTML";
+validate();
+}
+function isExcel() {
+//set "EXCEL value to hidden box"
+form.source.value="Excel";
+validate();	
+}
+function validate() {
+alert("123");
+//form validation logic	
+if(form.category.selectedIndex=='0'){
+
+alert("456");
+document.getElementById("categoryError").innerHTML="<b>must select category</b>";
+return false;
+}
+else{
+form.submit();
+}
+}
+</script>
+
+<h1 style="color:red;text-align: center">Search Books</h1>
+<form name="form" method="post" action="controller">
+<b>Selected Book Category</b>:
+<select name="category">
+<option value='' selected>--select--</option>
+<option value='Java'>Java</option>
+<option value='.Net'>.Net</option>
+<option value='Ruby'>Ruby</option>
+<option value='jscript'>JavaScript</option>
+</select>
+<span style="color:red" id="categoryError"></span><br><br>
+<input type="button" value="HtmlOutput" onclick="isHtml()">
+<input type="button" value="ExcelOutput" onclick="isExcel()">
+<br>
+<input type="hidden" name="source">
+</form>

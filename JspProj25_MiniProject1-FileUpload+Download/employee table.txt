@@ -1,0 +1,8 @@
+ Name                                      Null?    Type
+ ----------------------------------------- -------- --------------------
+
+ EID                                                NUMBER(15)
+ ENAME                                              VARCHAR2(2000)
+ EADD                                               VARCHAR2(2000)
+ PHOTO                                              CLOB
+ RESUME                                             VARCHAR2(20)

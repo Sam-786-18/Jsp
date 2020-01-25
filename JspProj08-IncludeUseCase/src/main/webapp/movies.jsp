@@ -1,0 +1,3 @@
+<h1 style="color:red">Mahesh Babu coming as Spider</h1>
+<p>
+<%=new java.util.Date() %>Hot News, Mahesh slowly moving way from feels Good Movies(Family Entertainments)coming with real Story and message oriented ovie called spider.let us wait whether this spider speeds or dies....
